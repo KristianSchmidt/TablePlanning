@@ -33,7 +33,7 @@ let visitorScore g1 g2 =
         | Person(_,_,Age(age1),interests1),Person(_,_,Age(age2),interests2) ->
             let commonInterests = interests1 |> List.filter (fun i -> List.exists ((=) i) interests2) |> List.length |> float
             let ageDiff = ((age1 - age2) |> abs |> float) / 10.0
-            commonInterests - ageDiff
+            ageDiff - commonInterests
     match g1,g2 with
     | Single(p1),Single(p2) -> coef p1 p2
     | Pair(p1,p2),Single(p3)

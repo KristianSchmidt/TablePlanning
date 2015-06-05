@@ -9,8 +9,10 @@ Desktop.ini
 $RECYCLE.BIN/
 
 lib/
+TablePlanning/bin/
 
 *_niels.data
+model.lp
 
 # Windows Installer files
 *.cab

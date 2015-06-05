@@ -1,72 +1,72 @@
 ﻿Name,Gender,Age,Interests
-Lea,0,29,
-Kristian,0,28,
-Jacob,1,0,
-Line,0,25,
+Lea,0,29,familie
+Kristian,1,28,familie
+Jacob,1,61,familie
+Line,0,25,familie
 Myk,1,28,
-Arne,1,66,
-Ingelise,0,60,
-Kasper,1,38,
-Sidsel,0,0,
-Camilla,0,38,
-Søren,1,0,
-Grethe,0,0,
-Jette,0,0,
-Michael,1,0,
-Janne,0,0,
+Arne,1,66,familie
+Ingelise,0,60,familie
+Kasper,1,38,familie
+Sidsel,0,25,
+Camilla,0,38,familie
+Søren,1,39,familie
+Grethe,0,68,familie
+Jette,0,65,familie
+Michael,1,48,familie
+Janne,0,45,familie
 Rasmus,1,29,
 Mona,0,29,
 Stefan,1,29,
 Isabella,0,25,
 Niels Holling,1,32,
-Birgitte,0,0,
-Julie,0,0,
-Andreas,1,0,
-Sepideh,0,0,
-Sebastian,1,0,
-Annemette,0,0,
-Anders,1,0,
-Niels Kjeldsen,1,0,
-Ninna,0,0,
+Birgitte,0,30,
+Julie,0,29,
+Andreas Julie,1,29,
+Sepideh,0,30,
+Sebastian,1,29,
+Annemette,0,30,
+Anders,1,33,
+Niels Kjeldsen,1,31,
+Ninna,0,31,
 Katrine,0,30,
-Johannes,1,35,
-Adam,0,0,
-Christina,0,0,
-Jannie,0,0,
-Kåre,1,0,
-Høffer,1,0,
-Rikke,0,0,
-Lars,1,0,
-Annemette J,0,0,
+Johannes,1,35,bordfodbold
+Adam,1,30,
+Christina,0,31,
+Jannie,0,31,
+Kåre,1,31,
+Høffer,1,31,
+Rikke,0,29,
+Lars,1,30,
+Annemette J,0,30,
 Nikolaj,1,28,
-Tea,0,0,
-Heidi,0,0,
-Esben,0,0,
-Caroline,0,0,
-Troels,1,0,
-Anna Maria,0,0,
-Claus,1,0,
-Emilie,0,0,
-Emma,0,0,
-Benjamin,1,0,
-Mads,1,0,
-Andreas,1,0,
-Andreas kæreste,1,0,
-Christel,0,0,
-Børge,1,0,
-Kenneth,1,0,
-Kenneths Kæreste,0,0,
-Thomas,1,0,
-Thomas Kæreste,1,0,
-Mette-Stine,0,0,
-Maria,0,0,
-Marias mand Andreas,1,0,
-Signe,0,0,
-Signes mand Henrik,1,0,
-Signe Matøk,0,0,
-Nina,0,0,
-Sara,0,0,
-Sven,1,0,
-Louis,1,0,
-Inga,0,0,
-Kalle,1,0,
+Tea,0,30,
+Heidi,0,30,
+Esben,0,29,
+Caroline,0,30,
+Troels,1,32,
+Anna Maria,0,59,familie
+Claus,1,60,familie
+Emilie,0,24,familie
+Emma,0,19,familie
+Benjamin,1,20,familie
+Mads,1,19,familie
+Andreas,1,19,familie
+Andreas kæreste,1,19,familie
+Christel,0,0,familie
+Børge,1,0,familie
+Kenneth,1,0,familie
+Kenneths Kæreste,0,0,familie
+Thomas,1,0,familie
+Thomas Kæreste,1,0,familie
+Mette-Stine,0,26,familie
+Maria,0,35,
+Marias mand Andreas,1,35,
+Signe,0,35,
+Signes mand Henrik,1,33,
+Signe Matøk,0,29,
+Nina,0,30,
+Sara,0,30,
+Sven,1,34,bordfodbold
+Louis,1,35,bordfodbold
+Inga,0,30,
+Kalle,1,26,bordfodbold

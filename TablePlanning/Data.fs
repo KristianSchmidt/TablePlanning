@@ -5,11 +5,11 @@ open System.IO
 open Domain
 
 [<Literal>]
-let guestPath = @"C:\Users\krist_000\Documents\Visual Studio 2013\Projects\TablePlanning\guest.data"
+let guestPath  = @"C:\Users\Kristian\Documents\GitHub\TablePlanning\guest.data"
 [<Literal>]
-let pairsPath = @"C:\Users\krist_000\Documents\Visual Studio 2013\Projects\TablePlanning\pairs.data"
+let pairsPath  = @"C:\Users\Kristian\Documents\GitHub\TablePlanning\pairs.data"
 [<Literal>]
-let groupsPath = @"C:\Users\krist_000\Documents\Visual Studio 2013\Projects\TablePlanning\groups.data"
+let groupsPath = @"C:\Users\Kristian\Documents\GitHub\TablePlanning\groups.data"
 
 type Guests = CsvProvider<guestPath>
 type Pairs = CsvProvider<pairsPath>

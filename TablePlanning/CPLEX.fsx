@@ -1,6 +1,6 @@
 ﻿#r @"../lib/ILOG.CPLEX.dll"
 #r @"../lib/ILOG.Concert.dll"
-#r @"..\packages\FSharp.Data.2.1.1\lib\net40\FSharp.Data.dll"
+#r @"..\packages\FSharp.Data.2.2.2\lib\net40\FSharp.Data.dll"
 
 #load "Domain.fs"
 #load "Data.fs"
@@ -38,7 +38,7 @@ module CPLEXHelpers =
         cplex.AddEq(var |> toExpr, 1.0)
 
     let export() = 
-        let exportFilename = @"C:\Users\krist_000\Documents\Visual Studio 2013\Projects\TablePlanning\model.lp"
+        let exportFilename = @"C:\Users\Kristian\Documents\GitHub\TablePlanning\model.lp"
         cplex.ExportModel(exportFilename)
         
 open CPLEXHelpers
@@ -173,16 +173,25 @@ cplex.AddObjective(ObjectiveSense.Minimize, obj)
 
 //CPLEXHelpers.export()
 
+let placePairAtTable name1 name2 table =
+    s (visitorIdx (Pair(personFromName name1, personFromName name2))) table |> forceVarTo1Constraint
+
+let placeSingleAtTable name table =
+    s (visitorIdx (Single(personFromName name))) table |> forceVarTo1Constraint
+
 // Anti symmetry constraints
-s (visitorIdx (Pair(personFromName "Kristian", personFromName "Lea"))) 0 |> forceVarTo1Constraint
-s (visitorIdx (Pair(personFromName "Rasmus", personFromName "Mona"))) 1 |> forceVarTo1Constraint
-s (visitorIdx (Pair(personFromName "Katrine", personFromName "Johannes"))) 2 |> forceVarTo1Constraint
-s (visitorIdx (Pair(personFromName "Adam", personFromName "Christina"))) 3 |> forceVarTo1Constraint
-s (visitorIdx (Pair(personFromName "Christel", personFromName "Børge"))) 4 |> forceVarTo1Constraint
-s (visitorIdx (Pair(personFromName "Signe", personFromName "Signes mand Henrik"))) 5 |> forceVarTo1Constraint
-s (visitorIdx (Single(personFromName "Nina"))) 6 |> forceVarTo1Constraint
-s (visitorIdx (Single(personFromName "Jette"))) 7 |> forceVarTo1Constraint
-s (visitorIdx (Pair(personFromName "Louis", personFromName "Inga"))) 8 |> forceVarTo1Constraint
+placePairAtTable "Kristian" "Lea" 0
+placePairAtTable "Arne"     "Ingelise" 0
+placePairAtTable "Kasper"   "Sidsel" 0
+placePairAtTable "Camilla"  "Søren" 0
+placePairAtTable "Rasmus"   "Mona" 1
+placePairAtTable "Katrine"  "Johannes" 2
+placePairAtTable "Adam"     "Christina" 3
+placePairAtTable "Christel" "Børge" 4
+placePairAtTable "Signe"    "Signes mand Henrik" 5
+placePairAtTable "Louis"    "Inga" 8
+placeSingleAtTable "Nina" 6
+placeSingleAtTable "Jette" 7
 
 cplex.SetParam(Cplex.IntParam.CutPass, -1)
 cplex.Solve()
@@ -194,8 +203,6 @@ let guestIsAtTable gIdx tIdx =
 
 let tableForGuest gIdx =
     tableIdxs |> Array.pick (guestIsAtTable gIdx)
-
-
 
 guestIdxs
 |> Array.map (fun g -> (visitorFromIdx g).Name, tableForGuest g)
