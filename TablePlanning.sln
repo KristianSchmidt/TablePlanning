@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TablePlanning", "TablePlanning\TablePlanning.fsproj", "{20DAB51E-3D08-4297-881C-6B6D007AC27F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E16A0680-0F24-4AB4-8328-AD37363318C7}"
+	ProjectSection(SolutionItems) = preProject
+		groups_niels.data = groups_niels.data
+		guest.data = guest.data
+		guest_niels.data = guest_niels.data
+		pairs.data = pairs.data
+		pairs_niels.data = pairs_niels.data
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Debug|x64.ActiveCfg = Debug|x64
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Debug|x64.Build.0 = Debug|x64
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Debug|x86.ActiveCfg = Debug|x86
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Debug|x86.Build.0 = Debug|x86
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Release|x64.ActiveCfg = Release|x64
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Release|x64.Build.0 = Release|x64
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Release|x86.ActiveCfg = Release|x86
+		{20DAB51E-3D08-4297-881C-6B6D007AC27F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Google.OrTools</id>
+    <version>1.0.3854</version>
+    <authors>Google</authors>
+    <owners>Google</owners>
+    <licenseUrl>http://code.google.com/p/or-tools/source/browse/trunk/LICENSE-2.0.txt</licenseUrl>
+    <projectUrl>http://code.google.com/p/or-tools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET Assembly for the OR-Tools project</description>
+    <releaseNotes>SVN Release 3854.</releaseNotes>
+    <copyright>Copyright 2015 Google</copyright>
+    <tags>OperationsResearch MathProgramming LinearProgramming C++ Python Java .NET</tags>
+  </metadata>
+</package>
