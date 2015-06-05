@@ -46,5 +46,6 @@ model.lp
 Network Trash Folder
 Temporary Items
 .apdisk
-TablePlanning/bin/**
+TablePlanning/bin/Debug/**
+TablePlanning/bin/Release/**
 TablePlanning/obj/**
