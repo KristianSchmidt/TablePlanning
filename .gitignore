@@ -9,7 +9,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 lib/
-TablePlanning/bin/
+TablePlanning/bin/*
 
 *_niels.data
 model.lp
