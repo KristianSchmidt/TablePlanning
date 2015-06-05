@@ -10,6 +10,8 @@ $RECYCLE.BIN/
 
 lib/
 
+*_niels.data
+
 # Windows Installer files
 *.cab
 *.msi
