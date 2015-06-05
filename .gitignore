@@ -9,7 +9,6 @@ Desktop.ini
 $RECYCLE.BIN/
 
 lib/
-TablePlanning/bin/*
 
 *_niels.data
 model.lp
@@ -47,3 +46,5 @@ model.lp
 Network Trash Folder
 Temporary Items
 .apdisk
+TablePlanning/bin/**
+TablePlanning/obj/**
