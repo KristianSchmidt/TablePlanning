@@ -61,7 +61,6 @@
     <Compile Include="Program.fs" />
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Planning.fsx" />
     <None Include="CPLEX.fsx" />
     <None Include="CompExpr.fsx" />
   </ItemGroup>
