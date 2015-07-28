@@ -81,3 +81,9 @@ let femaleMajorityVars = //cplex.BoolVarArray(numTables,tableIdxs |> Array.map (
 //let constraint4 = makeConstraint45 1.0 -1.0 maleMajorityVars
 //let constraint5 = makeConstraint45 -1.0 1.0 femaleMajorityVars
 *)
+
+
+open System
+open System.IO
+let lines = File.ReadAllLines(@"C:\Users\Kristian\Documents\GitHub\TablePlanning\guest.data")
+lines |> Array.map (fun s -> s.Split([|','|])) |> Array.map (fun arr -> Array.append arr.[0..2] [|(String.Join(";", arr.[3..]))|]) |> Array.map (fun arr -> String.Join(",",arr)) |> (fun arr -> File.WriteAllLines(@"C:\Users\Kristian\Documents\GitHub\TablePlanning\guest2.data", arr))
