@@ -60,7 +60,7 @@ module Model =
         let tableIdxs = [| 0 .. numTables - 1 |]
 
         /// Number of seats per table
-        let tableSeats = 8
+        let tableSeats = [11;6;6;7;8;8;8;8;8]
 
     module Vars =
         /// The boolean variables which correspond to s_{i,t} in the paper
@@ -99,7 +99,7 @@ let constraint1 = visitors |> Array.map makeConstraint1
 
 /// Constraint 2, which denotes that a table can hold at max _tableSeats_ guests
 let makeConstraint2 tableIdx =
-    let lessThanTableSeats expr = cplex.AddLe(expr, float tableSeats, sprintf "Table %i can only hold %i people" tableIdx tableSeats)
+    let lessThanTableSeats expr = cplex.AddLe(expr, float tableSeats.[tableIdx], sprintf "Table %i can only hold %i people" tableIdx tableSeats.[tableIdx])
     guestIdxs
     |> Array.map (fun v -> (s v tableIdx) |> prod (W_i v))
     |> cplex.Sum
@@ -184,6 +184,8 @@ placePairAtTable "Kristian" "Lea" 0
 placePairAtTable "Arne"     "Ingelise" 0
 placePairAtTable "Kasper"   "Sidsel" 0
 placePairAtTable "Camilla"  "Søren" 0
+placePairAtTable "Line" "Myk" 0
+placeSingleAtTable "Jacob" 0
 placePairAtTable "Rasmus"   "Mona" 1
 placePairAtTable "Katrine"  "Johannes" 2
 placePairAtTable "Adam"     "Christina" 3
